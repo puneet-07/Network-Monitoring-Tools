@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Selection Page</title>
+        <link rel="stylesheet" type="text/css" href="main2.css">
+
+</head>
+<body>
+    <div class = "container">
+            <h1>Network Monitoring Tool</h1>
+  <div class ="hyp">
+    <a href ="iogin.html"><button class="btn">Logout</button></a>
+</div> 
+<form class ="formc" action="monitoring.php" method="POST">
+    
+
+    <br><br><br><br>
+<p style="text-align: center">
+<b>Click the radio button to select any one packet:</b> <br>
+<br><br>
+<input type="radio" name="networktype" value="tcp" checked/> For TCP<br>
+<input type="radio" name="networktype" value="udp"/> For UDP<br>
+<input type="radio" name="networktype" value="ARP"/> For ARP<br>
+<br><br>
+<br><br>
+<b>Select any type of packet information:</b>
+<select name="choice">
+<option selected="true" disabled="disabled">Select One</option>
+<option value="Timestamp">Timestamp</option>
+<option value="Source Ip">Source Ip Address</option>
+<option value="Destination Ip">Destination Ip Address</option>
+<option value="Source Port">Source Port</option>
+<option value="Destination Port">Destination Port</option>
+
+    <option value="Source Mac Address">Source Mac Address</option>
+<option value="Destination Mac Address">Destination Mac Address</option>
+<option value="Length of Packet">Length of Packet</option>
+</select>
+<br><br> </p>
+<p style="text-align: center">
+<input class="a" type="submit" name="submit" value="CLICK HERE"/>
+   
+
+    </form>
+       
+    </div>  
+</body>
+</html>
